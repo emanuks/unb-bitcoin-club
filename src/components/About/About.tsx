@@ -12,7 +12,7 @@ import {
 
 export const About = () => {
   return (
-    <AboutContainer id="about">
+    <AboutContainer>
       <AboutTitle>
         WHAT WE DO?
       </AboutTitle>

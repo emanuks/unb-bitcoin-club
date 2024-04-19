@@ -14,6 +14,10 @@ export const HeaderContainer = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+
+  @media (max-width: 768px) {
+    height: 8rem;
+  }
 `;
 
 export const HeaderLinks = styled.div`

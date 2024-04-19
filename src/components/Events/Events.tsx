@@ -17,6 +17,7 @@ export const Events = () => {
             event={event}
           />
         )}
+        <div id="team" />
       </EventsThread>
     </EventsContainer>
   );

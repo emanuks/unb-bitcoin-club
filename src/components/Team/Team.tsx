@@ -5,7 +5,7 @@ import { teamMembers } from "./utils";
 
 export const Team = () => {
   return (
-    <TeamContainer id="team">
+    <TeamContainer>
       <TeamTitle>MEET OUR TEAM</TeamTitle>
       <TeamMembersContainer>
         {teamMembers.map((member) =>
