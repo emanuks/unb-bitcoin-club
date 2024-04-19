@@ -6,6 +6,12 @@ export const EventsContainer = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 2rem;
+  }
 `;
 
 export const EventsTitle = styled.h1`
@@ -23,4 +29,8 @@ export const EventsThread = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  @media (max-width: 768px) {
+    gap: 2rem;
+  }
 `;

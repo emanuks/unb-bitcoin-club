@@ -1,6 +1,7 @@
 import { faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { useMediaQuery } from "@mui/material";
 
 import {
   TeamMemberContainer,
@@ -11,8 +12,9 @@ import {
 } from "./TeamMember.styles";
 import { TeamMemberProps } from "./TeamMember.types";
 
-
 export const TeamMember = ({ member }: TeamMemberProps) => {
+  const matches = useMediaQuery('(max-width: 768px)');
+
   return (
     <TeamMemberContainer>
       <FontAwesomeIcon icon={faUser} size='2xl' />
@@ -26,13 +28,22 @@ export const TeamMember = ({ member }: TeamMemberProps) => {
 
       <TeamMemberLinks>
         <TeamMemberLink>
-          <FontAwesomeIcon icon={faLinkedin} />
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            {...(matches ? { size: 'xl' } : {})}
+          />
         </TeamMemberLink>
         <TeamMemberLink>
-          <FontAwesomeIcon icon={faTwitter} />
+          <FontAwesomeIcon
+            icon={faTwitter}
+            {...(matches ? { size: 'xl' } : {})}
+          />
         </TeamMemberLink>
         <TeamMemberLink>
-          <FontAwesomeIcon icon={faEnvelope} />
+          <FontAwesomeIcon
+            icon={faEnvelope}
+            {...(matches ? { size: 'xl' } : {})}
+          />
         </TeamMemberLink>
       </TeamMemberLinks>
     </TeamMemberContainer>

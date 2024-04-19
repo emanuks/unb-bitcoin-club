@@ -17,4 +17,10 @@ export const TeamMembersContainer = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 0.5rem;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
 `;

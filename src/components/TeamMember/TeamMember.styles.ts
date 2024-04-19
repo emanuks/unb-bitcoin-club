@@ -9,12 +9,20 @@ export const TeamMemberContainer = styled.div`
   align-items: center;
 
   gap: 0.5rem;
+
+  @media (max-width: 768px) {
+    margin: 2rem 0;
+  }
 `;
 
 export const TeamMemberName = styled.p``;
 
 export const TeamMemberPosition = styled.p`
   font-size: 0.75rem;
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const TeamMemberLinks = styled.div`

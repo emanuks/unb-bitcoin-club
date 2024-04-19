@@ -10,6 +10,10 @@ export const AboutContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 768px) {
+    height: 70rem;
+  }
 `;
 
 export const AboutTitle = styled.h1`
@@ -24,6 +28,10 @@ export const AboutSections = styled.div`
   justify-content: center;
   align-items: center;
   gap: 5rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const AboutSectionItem = styled.div`
